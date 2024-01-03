@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk / Login | Tokopedia</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./Asset/Img/581fca3a.png" alt="" width="160px" height="34px">
+        </div>
+        <div class="background-image">
+        <img src="./Asset/Img/45ab29df.png" alt="" width="816px">
+
+        <div class="login-form">
+
+            <div class="heading1">
+                <h1>Masuk</h1>
+                <a href="">Daftar</a>
+            </div>
+            <div class="email-input"> 
+            <label for="email" class="label1">Nomor HP atau Email</label>
+            <div class="input-form" id="form-email">
+                 <input type="text" id="emailInput"  required>
+                 <a id="ubah" style="font-size: 13.5px; display: none;" onclick="changeEmailInput()">Ubah</a>
+            </div>
+            <label for="password" class="label1" style="display: none;">Kata Sandi</label>
+            <div class="passwordinput" id="passwordInputContainer">
+                <div class="hideandshow" onclick="togglePasswordVisibility()" >
+                    <img src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/16c63cb0.svg" alt="Toggle Password">
+                </div>
+                <input type="password" id="passwordInput"  required>
+            
+           </div>       
+           <div class="remember-me">
+            <input type="checkbox"><span>Ingat Saya</span>
+                <a href="">Lupa kata sandi?</a>
+           </div>
+           
+            <div class="need-help">
+            <a href="" >Butuh bantuan?</a>
+        </div>
+            <button class="next" id="nextButton" disabled onclick="togglePasswordInput()"><span>Selanjutnya</span></button>
+            <button class="masuk" id="loginbtn"><a>Masuk</a></button>
+        </div>
+            <div class="option">
+                <span class="line1"></span>
+                <span class="text-option">atau masuk dengan</span>
+                <span class="line2"></span>
+            </div>
+            <div class="qr">
+                <a href=""><button class="qrcode"><img src="./Asset/Img/Qricon.png" alt=""><span>Scan Kode QR</span></button></a>
+            </div>
+            <div class="google">
+                <a href=""><button class="withgoogle"><img src="./Asset/Img/Googleicon.png" alt=""><span>Google</span></button></a>
+            </div>
+    
+        </div>
+    </div>
+    </div>
+    <footer>
+        <span>© 2009-2024, PT Tokopedia<a href="https://www.tokopedia.com/help" target="_blank">Bantuan</a></span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
